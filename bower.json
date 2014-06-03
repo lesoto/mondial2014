@@ -1,22 +1,38 @@
 {
-  "name": "angularJS-IL",
-  "version": "1.0.0",
+  "name": "worldcup",
+  "version": "0.0.1",
+  "authors": [
+    "lesoto <lesoto@lesoto.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
+    "angular": "1.2.16",
+    "angular-bootstrap": "*",
+    "angular-fire": "*",
+    "angular-mocks": "1.2.16",
+    "angular-cookies": "1.2.16",
+    "angular-route": "1.2.16",
+    "angular-resource": "1.2.16",
+    "angular-sanitize": "1.2.16",
+    "angular-scenario": "1.2.16",
+    "angularfire": "*",
     "bootstrap": "2.3.2",
-    "angular": "1.2.0-rc.1",
-    "angular-resource": "1.2.0-rc.1",
-    "angular-cookies": "1.2.0-rc.1",
-    "angular-route": "1.2.0-rc.1",
-    "angular-bootstrap": "~0.4.0",
-    "json3": "~3.2.4",
-    "jquery": "~1.9.1",
-    "angular-fire": "latest"
+    "es5-shim": "3.4.0",
+    "jquery": "2.0.3",
+    "json3": "3.3.1"
   },
   "devDependencies": {
-    "angular-mocks": "1.2.0-rc.1",
-    "angular-scenario": "1.2.0-rc.1"
+    "angular-mocks": "1.2.16",
+    "angular-scenario": "1.2.16"
   },
   "resolutions": {
-    "angular": "1.2.0-rc.1"
+    "angular": "1.2.16"
   }
 }
