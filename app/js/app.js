@@ -6,5 +6,5 @@ var app = angular.module('fantasyApp',
   , 'fantasyApp.controllers.header'
   , 'fantasyApp.controllers.signin'
   , 'fantasyApp.controllers.signup'
-  , 'firebase', 'ui.bootstrap', 'ngRoute']
+  ,	'localization', 'firebase', 'ui.bootstrap', 'ngRoute']
   )

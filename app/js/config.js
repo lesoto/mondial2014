@@ -19,4 +19,17 @@ app.config(['$routeProvider',
 
   .constant('FBURL', 'https://crackling-fire-8110.firebaseio.com/')
 
+function LanguageCtrl($scope, localize) {
 
+    $scope.setEnglishLanguage = function() {
+        localize.setLanguage('en-US');
+    };
+
+    $scope.setSpanishLanguage = function() {
+        localize.setLanguage('es-US');
+    };
+
+    $scope.setRussianLanguage = function() {
+        localize.setLanguage('ru-RU');
+    };
+  }

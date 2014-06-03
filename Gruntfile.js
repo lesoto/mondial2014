@@ -130,7 +130,6 @@ module.exports = function (grunt) {
             server: {
                 path: 'http://localhost:<%= connect.options.port %>'
             }
-
             ,
             nexus4:{
                 path: 'http://www.browserstack.com/start#os=android&os_version=4.2&device=LG+Nexus+4&speed=1&start=true&url=http://rnikitin.github.io/examples/jumbotron/'
