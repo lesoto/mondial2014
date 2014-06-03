@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fantasyApp.controllers.header', ['fantasyApp.services.login'])
+angular.module('mondial2014.controllers.header', ['mondial2014.services.login'])
   .controller('HeaderController', ['$scope', '$location', 'loginService', 'angularFire', 'FBURL', 
     function($scope, $location, loginService, angularFire, FBURL) {
 
@@ -13,5 +13,18 @@ angular.module('fantasyApp.controllers.header', ['fantasyApp.services.login'])
       };
 
       $scope.navbarEntries = [
+        {
+          "title": "Teams",
+          "link": "/teams"
+        }
       ];
+      
+      $scope.$on('$routeChangeSuccess', function() {
+        $scope.navbarEntries.forEach(
+          function(data) {
+            data.isActive = ($location.path().indexOf(data.link) == 0);
+          }
+        )
+      })
+
     }])

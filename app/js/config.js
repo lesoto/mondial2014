@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fantasyApp.config', [])
+angular.module('mondial2014.config', [])
 
 app.config(['$routeProvider', 
     function($routeProvider) {

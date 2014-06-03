@@ -1,17 +1,10 @@
 [
     {
-        "key":"_Greeting_",
-        "value":"Site localization example using the resource localization service",
-        "description":"Home page greeting text"
-    },
-    {
         "key":"_HomeTitle_",
-        "value":"Resource Localization Service",
-        "description":"Home page title text"
+        "value":"World Cup 2014"
     },
     {
-        "key":"_HomeControllerTitle_",
-        "value":"List Example",
-        "description":"Home Pane Title"
+        "key":"_HeaderTitle_",
+        "value":"Brazil 2014"
     }
 ]

@@ -1,10 +1,10 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-var app = angular.module('fantasyApp',
-  [ 'fantasyApp.config'
-  , 'fantasyApp.controllers.header'
-  , 'fantasyApp.controllers.signin'
-  , 'fantasyApp.controllers.signup'
+var app = angular.module('mondial2014',
+  [ 'mondial2014.config'
+  , 'mondial2014.controllers.header'
+  , 'mondial2014.controllers.signin'
+  , 'mondial2014.controllers.signup'
   ,	'localization', 'firebase', 'ui.bootstrap', 'ngRoute']
   )
