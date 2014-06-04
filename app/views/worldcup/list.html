@@ -2,6 +2,6 @@
   <h2>WorldCup Teams</h2>
   <div data-ng-repeat="worldcupteam in worldcupteams">
     <img src="img/flags/{{ worldcupteam.code }}.png">
-    <a href="#/teams/{{ $index }}">{{ worldcupteam.title }} {{ worldcupteam.teamId }} Group - {{ worldcupteam.group }}</a>
+    <a href="#/teams/{{ $index }}">{{ worldcupteam.title }} {{ worldcupteam.ranking }} Group {{ worldcupteam.group }}</a>
   </div>
 </div>
