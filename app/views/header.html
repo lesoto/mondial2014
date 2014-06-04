@@ -5,6 +5,9 @@
       <a href="#{{entry.link}}">{{entry.title}}</a>
     </li>
   </ul>
+  <span ng-controller="LanguageCtrl">
+    <a href="#" ng-click="setEnglishLanguage()">English</a> | <a href="#" ng-click="setSpanishLanguage()">Spanish</a> | <a href="#" ng-click="setRussianLanguage()">Russian</a>
+  </span>
   <ul class="nav pull-right" ng-hide="auth">
     <li><a href="#/signup">Signup</a></li>
     <li class="divider-vertical"></li>

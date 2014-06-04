@@ -8,8 +8,8 @@ app.config(['$routeProvider',
       .when('/',        { templateUrl: 'views/default.html' })
       .when('/signin',  { templateUrl: 'views/users/signin.html' })
       .when('/signup',  { templateUrl: 'views/users/signup.html' })
-      .when('/teams',  { templateUrl: 'views/nfl/list.html', authRequired: true })
-      .when('/nflteams/:nflTeamId', { templateUrl: 'views/nfl/view.html', authRequired: true })
+      .when('/teams',  { templateUrl: 'views/worldcup/list.html', authRequired: true })
+      .when('/teams/:TeamId', { templateUrl: 'views/worldcup/view.html', authRequired: true })
       .otherwise(       { redirectTo: '/' });
     }])
   

@@ -1,7 +1,7 @@
-angular.module('mondial2014.services.nfl', [])
-  .factory('NFL', function() {
-    var NFL = {};
-    NFL.teams = [
+angular.module('mondial2014.services.worldcup', [])
+  .factory('WorldCup', function() {
+    var WorldCup = {};
+    WorldCup.teams = [
       {"abbr":"ARI", "team":"Arizona",        "mascot": "Cardinals",  "conference":"NFC", "division": "West"},
       {"abbr":"ATL", "team":"Atlanta",        "mascot": "Falcons",    "conference":"NFC", "division": "South"},
       {"abbr":"BAL", "team":"Baltimore",      "mascot": "Ravens",     "conference":"AFC", "division": "North"},
@@ -35,7 +35,7 @@ angular.module('mondial2014.services.nfl', [])
       {"abbr":"TEN", "team":"Tennessee",      "mascot": "Titans",     "conference":"AFC", "division": "South"},
       {"abbr":"WAS", "team":"Washington",     "mascot": "Redskins",   "conference":"NFC", "division": "East"}
     ];
-    NFL.positions = [
+    WorldCup.positions = [
       {"abbr":"QB",  "pos":"Quarterback"},
       {"abbr":"RB",  "pos":"Runningback"},
       {"abbr":"WR",  "pos":"Wide Receiver"},
@@ -43,5 +43,5 @@ angular.module('mondial2014.services.nfl', [])
       {"abbr":"K",   "pos":"Kicker"},
       {"abbr":"D/ST","pos":"Defense/Special Teams"}
     ];
-    return NFL;
+    return WorldCup;
   });

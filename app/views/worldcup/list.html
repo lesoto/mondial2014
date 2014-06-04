@@ -1,0 +1,6 @@
+<div data-ng-controller="WorldCupController">
+  <h2>WorldCup Teams</h2>
+  <div data-ng-repeat="worldcupteam in worldcupteams">
+    <a href="#/teams/{{ $index }}">{{ worldcupteam.team }} {{ worldcupteam.mascot }}</a>
+  </div>
+</div>
