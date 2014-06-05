@@ -1,6 +1,11 @@
 angular.module('mondial2014.services.worldcup', [])
-  .factory('WorldCup', function() {
+  .factory('WorldCup', function($http) {
+/*    var WorldCup = $http.get('../data/teams.json').success(function(response) {
+        return response.data;
+    });
+*/
     var WorldCup = {};
+    
     WorldCup.teams = [
       { "teamId" : 31, "title" : "Russia", "code" : "rus", "group" : 8, "ranking": 903 }, 
       { "teamId" : 10, "title" : "Greece", "code" : "gre", "group" : 3, "ranking": 1082 }, 
@@ -34,7 +39,7 @@ angular.module('mondial2014.services.worldcup', [])
       { "teamId" : 12, "title" : "Japan", "code" : "jpn", "group" : 3, "ranking": 613 }, 
       { "teamId" : 32, "title" : "South Korea", "code" : "kor", "group" : 8, "ranking": 551 }, 
       { "teamId" : 23, "title" : "Iran", "code" : "irn", "group" : 6, "ranking": 715 }
-    ];
+    ];   
 
 //    WorldCup.groups = [
 //      {"abbr":"Group A", { "teamName" : "Brazil"}, { "teamName" : "Croatia"}, { "teamName" : "Mexico"}, { "teamName" : "Cameroon"} },
