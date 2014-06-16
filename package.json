@@ -12,7 +12,8 @@
     "body-parser": "latest",    
     "gzippo": "^0.2.0",
     "path": "latest",
-    "routes": "latest"
+    "routes": "latest",
+    "ejs": "latest"
   },
   "devDependencies": {
     "coffee": "0.0.1",
@@ -66,5 +67,6 @@
     "test": "grunt test"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "private": "true"
 }
