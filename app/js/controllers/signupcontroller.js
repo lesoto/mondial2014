@@ -4,10 +4,6 @@ angular.module('mondial2014.controllers.signup', [])
   .controller('SignupCtrl', ['$scope', 'loginService', '$location',
     function($scope, loginService, $location) {
 
-      if (!!$scope.auth) {
-        $location.path('/');
-      }
-
       $scope.$on('angularFireAuth:login', function () {
         $location.path('/');
       })

@@ -5,8 +5,14 @@
 angular.scenario.dsl('angularFireLogin', function() {
    return function() {
       return this.addFutureAction('Logging in', function($window, $document, done) {
-         var angularFireAuth = $document.injector().get('angularFireAuth');
-         return angularFireAuth.login('password', {
+         var $firebaseSimpleLogin
+      { "
+      { " = $document.injector().get('$firebaseSimpleLogin
+      { "
+      { "');
+         return $firebaseSimpleLogin
+      { "
+      { ".login('password', {
             email: 'test@test.com',
             password: 'test123',
             rememberMe: false
@@ -22,8 +28,14 @@ angular.scenario.dsl('angularFireLogin', function() {
 angular.scenario.dsl('angularFireLogout', function() {
    return function() {
       this.addFutureAction('Logging out', function($window, $document, done) {
-         var angularFireAuth = $document.injector().get('angularFireAuth');
-         angularFireAuth.logout();
+         var $firebaseSimpleLogin
+      { "
+      { " = $document.injector().get('$firebaseSimpleLogin
+      { "
+      { "');
+         $firebaseSimpleLogin
+      { "
+      { ".logout();
          done(null, true);
       });
    }

@@ -9,43 +9,69 @@ describe('service', function() {
       $provide.value('Firebase', firebaseStub());
       $provide.value('$location', stub('path'));
       $provide.value('FBURL', 'FAKE_FB_URL');
-      $provide.value('angularFireAuth', angularAuthStub());
+      $provide.value('$firebaseSimpleLogin
+      { "
+      { "', angularAuthStub());
    }));
 
    describe('loginService', function() {
       describe('#login', function() {
-         it('should return error if angularFireAuth.login fails',
-            inject(function($q, $rootScope, loginService, angularFireAuth) {
+         it('should return error if $firebaseSimpleLogin
+      { "
+      { ".login fails',
+            inject(function($q, $rootScope, loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
-               angularFireAuth.login.andReturn(reject($q, 'test_error'));
+               $firebaseSimpleLogin
+      { "
+      { ".login.andReturn(reject($q, 'test_error'));
                loginService.login('test@test.com', '123', null, cb);
                $rootScope.$apply();
                expect(cb).toHaveBeenCalledWith('test_error');
             })
          );
 
-         it('should return user if angularFireAuth.login succeeds',
-            inject(function(loginService, angularFireAuth, $rootScope, $q) {
+         it('should return user if $firebaseSimpleLogin
+      { "
+      { ".login succeeds',
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ", $rootScope, $q) {
                var cb = jasmine.createSpy();
-               angularFireAuth.login.andReturn(resolve($q, {hello: 'world'}));
+               $firebaseSimpleLogin
+      { "
+      { ".login.andReturn(resolve($q, {hello: 'world'}));
                loginService.login('test@test.com', '123', null, cb);
                $rootScope.$apply();
                expect(cb).toHaveBeenCalledWith(null, {hello: 'world'});
             })
          );
 
-         it('should invoke the redirect if angularFireAuth.login succeeds',
-            inject(function(loginService, angularFireAuth, $rootScope, $location, $q) {
-               angularFireAuth.login.andReturn(resolve($q, {hello: 'world'}));
+         it('should invoke the redirect if $firebaseSimpleLogin
+      { "
+      { ".login succeeds',
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ", $rootScope, $location, $q) {
+               $firebaseSimpleLogin
+      { "
+      { ".login.andReturn(resolve($q, {hello: 'world'}));
                loginService.login('test@test.com', '123', '/hello');
                $rootScope.$apply();
                expect($location.path).toHaveBeenCalledWith('/hello');
             })
          );
 
-         it('should not invoke the redirect if angularFireAuth.login fails',
-            inject(function(loginService, angularFireAuth, $rootScope, $location, $q) {
-               angularFireAuth.login.andReturn(reject($q, 'Nooooooo!'));
+         it('should not invoke the redirect if $firebaseSimpleLogin
+      { "
+      { ".login fails',
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ", $rootScope, $location, $q) {
+               $firebaseSimpleLogin
+      { "
+      { ".login.andReturn(reject($q, 'Nooooooo!'));
                loginService.login('test@test.com', '123', '/hello');
                $rootScope.$apply();
                expect($location.path).not.toHaveBeenCalled();
@@ -54,15 +80,23 @@ describe('service', function() {
       });
 
       describe('#logout', function() {
-         it('should invoke angularFireAuth.logout()', function() {
-            inject(function(loginService, angularFireAuth) {
+         it('should invoke $firebaseSimpleLogin
+      { "
+      { ".logout()', function() {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                loginService.logout('/bye');
-               expect(angularFireAuth.logout).toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { ".logout).toHaveBeenCalled();
             });
          });
 
          it('should invoke redirect after calling logout', function() {
-            inject(function(loginService, angularFireAuth, $rootScope, $location) {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ", $rootScope, $location) {
                loginService.logout('/bye');
                expect($location.path).toHaveBeenCalledWith('/bye');
             });
@@ -71,7 +105,9 @@ describe('service', function() {
 
       describe('#changePassword', function() {
          it('should fail if old password is missing',
-            inject(function(loginService, angularFireAuth) {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
                loginService.changePassword({
                   newpass: 123,
@@ -79,12 +115,16 @@ describe('service', function() {
                   callback: cb
                });
                expect(cb).toHaveBeenCalledWith('Please enter a password');
-               expect(angularFireAuth.changePassword).not.toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { ".changePassword).not.toHaveBeenCalled();
             })
          );
 
          it('should fail if new password is missing',
-            inject(function(loginService, angularFireAuth) {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
                loginService.changePassword({
                   oldpass: 123,
@@ -92,12 +132,16 @@ describe('service', function() {
                   callback: cb
                });
                expect(cb).toHaveBeenCalledWith('Please enter a password');
-               expect(angularFireAuth.changePassword).not.toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { ".changePassword).not.toHaveBeenCalled();
             })
          );
 
          it('should fail if passwords don\'t match',
-            inject(function(loginService, angularFireAuth) {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
                loginService.changePassword({
                   oldpass: 123,
@@ -106,14 +150,22 @@ describe('service', function() {
                   callback: cb
                });
                expect(cb).toHaveBeenCalledWith('Passwords do not match');
-               expect(angularFireAuth.changePassword).not.toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { ".changePassword).not.toHaveBeenCalled();
             })
          );
 
-         it('should fail if angularFireAuth fails',
-            inject(function(loginService, angularFireAuth) {
+         it('should fail if $firebaseSimpleLogin
+      { "
+      { " fails',
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
-               customSpy(angularFireAuth._authClient, 'changePassword', function(oldp, newp, confp, cb) {
+               customSpy($firebaseSimpleLogin
+      { "
+      { "._authClient, 'changePassword', function(oldp, newp, confp, cb) {
                   cb(new ErrorWithCode(123, 'errr'));
                });
                loginService.changePassword({
@@ -123,14 +175,22 @@ describe('service', function() {
                   callback: cb
                });
                expect(cb).toHaveBeenCalledWith('[123] errr');
-               expect(angularFireAuth._authClient.changePassword).toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { "._authClient.changePassword).toHaveBeenCalled();
             })
          );
 
-         it('should return null if angularFireAuth succeeds',
-            inject(function(loginService, angularFireAuth) {
+         it('should return null if $firebaseSimpleLogin
+      { "
+      { " succeeds',
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
-               customSpy(angularFireAuth._authClient, 'changePassword', function(oldp, newp, confp, cb) {
+               customSpy($firebaseSimpleLogin
+      { "
+      { "._authClient, 'changePassword', function(oldp, newp, confp, cb) {
                   cb(null);
                });
                loginService.changePassword({
@@ -140,23 +200,35 @@ describe('service', function() {
                   callback: cb
                });
                expect(cb).toHaveBeenCalledWith(null);
-               expect(angularFireAuth._authClient.changePassword).toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { "._authClient.changePassword).toHaveBeenCalled();
             })
          );
       });
 
       describe('#createAccount', function() {
-         it('should invoke angularFireAuth',
-            inject(function(loginService, angularFireAuth) {
+         it('should invoke $firebaseSimpleLogin
+      { "
+      { "',
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                loginService.createAccount('test@test.com', 123);
-               expect(angularFireAuth._authClient.createUser).toHaveBeenCalled();
+               expect($firebaseSimpleLogin
+      { "
+      { "._authClient.createUser).toHaveBeenCalled();
             })
          );
 
          it('should invoke callback if error',
-            inject(function(loginService, angularFireAuth) {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy(), undefined;
-               customSpy(angularFireAuth._authClient, 'createUser', function(e, p, cb) {
+               customSpy($firebaseSimpleLogin
+      { "
+      { "._authClient, 'createUser', function(e, p, cb) {
                   cb('errr');
                });
                loginService.createAccount('test@test.com', 123, cb);
@@ -165,9 +237,13 @@ describe('service', function() {
          );
 
          it('should invoke callback if success',
-            inject(function(loginService, angularFireAuth) {
+            inject(function(loginService, $firebaseSimpleLogin
+      { "
+      { ") {
                var cb = jasmine.createSpy();
-               customSpy(angularFireAuth._authClient, 'createUser', function(e, p, cb) {
+               customSpy($firebaseSimpleLogin
+      { "
+      { "._authClient, 'createUser', function(e, p, cb) {
                   cb(null, 'oh hai!');
                });
                loginService.createAccount('test@test.com', 123, cb);

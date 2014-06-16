@@ -1,4 +1,7 @@
+
 'use strict';
+
+/* Services */
 
 angular.module('mondial2014.services.login', ['mondial2014.services.profileCreator'])
   .factory('loginService', ['angularFireAuth', 'profileCreator', '$location', '$rootScope',
