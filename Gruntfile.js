@@ -444,7 +444,7 @@ module.exports = function(grunt) {
 		concurrent : {
 			server : ['compass:server'],
 			test : ['compass'],
-			dist : ['compass:dist', 'imagemin', 'svgmin']
+			dist : [/*'compass:dist',*/ 'imagemin', 'svgmin']
 		},
 
 		// By default, your `index.html`'s <!-- Usemin block --> will take care of
@@ -514,7 +514,7 @@ module.exports = function(grunt) {
 	//'karma',
 	'jshint']);
 
-	grunt.registerTask('build', ['clean:dist', 'bowerInstall', 'useminPrepare', 'concurrent:dist', 'autoprefixer', 'ngmin', 'copy:dist', 'cdnify', 'rev', 'usemin', 'htmlmin', 'requirejs', 'htmlSnapshot' /* , 'concat', 'modernizr', 'cssmin', 'uglify', 'responsive_images:dev', 'requirejs:dist' */ ]);
+	grunt.registerTask('build', ['clean:dist', /*'bowerInstall', */ 'useminPrepare', 'concurrent:dist', 'autoprefixer', 'ngmin', 'copy:dist', 'cdnify', 'rev', 'usemin', 'htmlmin', /*'requirejs', 'htmlSnapshot' , 'concat', 'modernizr', 'cssmin', 'uglify', 'responsive_images:dev', 'requirejs:dist' */ ]);
 
 	grunt.registerTask('default', ['newer:jshint', 'test', 'build']);
 
