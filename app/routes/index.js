@@ -14,3 +14,7 @@ exports.signin = function(req, res){
 exports.signup = function(req, res){
   res.render('../app/views/users/signup.html');
 };
+
+exports.sitemap = function(req, res){
+  res.render('../app/views/sitemap.html');
+};

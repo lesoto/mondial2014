@@ -18,5 +18,9 @@
     {
         "key":"_HeaderGames_",
         "value":"Games"
+    },
+    {
+        "key":"_SitemapTitle_",
+        "value":"Sitemap"
     }
 ]

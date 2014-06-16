@@ -18,5 +18,9 @@
     {
         "key":"_HeaderGames_",
         "value":"SPGames"
+    },
+    {
+        "key":"_SitemapTitle_",
+        "value":"SPANISH Sitemap"
     }
 ]

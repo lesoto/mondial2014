@@ -18,5 +18,9 @@
     {
         "key":"_HeaderGames_",
         "value":"Игры"
+    },
+    {
+        "key":"_SitemapTitle_",
+        "value":"Карта сайта"
     }
 ]

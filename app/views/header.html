@@ -1,30 +1,39 @@
-<div class="navbar-inner ng-scope" ng-controller="HeaderController">
-  <ul class="nav">
-    <li><a class="brand" href="#/" data-i18n="_HeaderTitle_"></a></li>
-    <li data-ng-repeat="entry in navbarEntries" data-ng-show="auth" data-ng-class="{ active: entry.isActive }">
-      <a href="#{{entry.link}}">{{entry.title}}</a>
-    </li>
-  </ul>
-  <span ng-controller="LanguageCtrl">
-  <ul>
-    <li>
-      <a href="#" ng-click="setEnglishLanguage()">English</a> | <a href="#" ng-click="setSpanishLanguage()">Spanish</a> | <a href="#" ng-click="setRussianLanguage()">Russian</a>
-    </li>
-  </ul>
-  </span>
-  <ul class="nav pull-right" ng-hide="auth">
-    <li><a href="#/signup">Signup</a></li>
-    <li class="divider-vertical"></li>
-    <li><a href="#/signin">Signin</a></li>
-  </ul>
-  <ul class="nav pull-right ng-hide" ng-show="auth">
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        {{ user.name }}<b class="caret"></b>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="" ng-click="logout()">Signout</a></li>
+<div ng-controller="HeaderController">
+  <div class="container">
+    <nav id="mainmenu" class="mainmenu">
+      <ul class="nav pull-right" ng-hide="auth">
+        <li><a href="#/signup">Signup</a></li>
+        <li class="divider-vertical"></li>
+        <li><a href="#/signin">Signin</a></li>
       </ul>
-    </li>
-  </ul>
+      <ul class="nav pull-right ng-hide" ng-show="auth">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            {{ user.name }}<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="" ng-click="logout()">Signout</a></li>
+          </ul>
+        </li>
+      </ul>  
+      <ul>
+        <li class="logo-wrapper"><a href="index.html"><img src="img/logo.png" alt=""></a></li>
+        <li>
+          <a href="#/" data-i18n="_HeaderTitle_"></a>
+        </li>
+        <li data-ng-repeat="entry in navbarEntries" data-ng-show="auth" data-ng-class="{ active: entry.isActive }">
+          <a href="#{{entry.link}}">{{entry.title}}</a>
+        </li>
+        <li>
+          <div class="dropdown choose-country" ng-controller="LanguageCtrl">
+            <a class="#" data-toggle="dropdown" href="#" ng-click="setEnglishLanguage()"><img src="img/flags/usa.png" alt="English"> English</a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menuitem"><a href="#" ng-click="setRussianLanguage()"><img src="img/flags/rus.png" alt="Russian"> Russian</a></li>
+              <li role="menuitem"><a href="#" ng-click="setSpanishLanguage()"><img src="img/flags/esp.png" alt="Spanish"> Spanish</a></li>
+            </ul>
+          </div>  
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
