@@ -7,6 +7,11 @@
     "test": "test"
   },
   "dependencies": {
+    "express": "latest",
+    "logfmt": "latest",
+    "body-parser": "latest"
+  },
+  "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.4.2",
     "grunt-bower-install": "^1.0.2",
@@ -36,9 +41,7 @@
     "load-grunt-tasks": "^0.4.0",
     "time-grunt": "^0.2.10",
     "grunt-requirejs": "*",
-    "grunt-contrib-qunit": "*"
-  },
-  "devDependencies": {
+    "grunt-contrib-qunit": "*",
     "coffee": "0.0.1",
     "grunt-autoshot": "^0.2.0",
     "grunt-contrib-compass": "^0.2.0",

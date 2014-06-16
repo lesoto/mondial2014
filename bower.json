@@ -23,10 +23,7 @@
     "angular-bootstrap": "~0.4.0",
     "json3": "~3.2.4",
     "jquery": "~1.9.1",
-    "angularfire": "latest",
-    "express": "latest",
-    "logfmt": "latest",
-    "body-parser": "latest"
+    "angularfire": "latest"
   },
   "devDependencies": {
     "angular-mocks": "1.2.0-rc.1",
