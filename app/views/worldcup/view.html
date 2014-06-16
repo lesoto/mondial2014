@@ -1,6 +1,34 @@
-<div data-ng-controller="WorldCupController">
-    <h2>{{ worldcupteam.title }} {{ worldcupteam.ranking }}</h2>
-    <p><strong>Abbreviation: </strong>{{ worldcupteam.code }}</p>
-    <p><strong>Group: </strong>{{ worldcupteam.group }}</p>
-    <p><a href="#/teams">All WorldCup teams</a></p>
-  </div>
+<div class="section section-breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 data-i18n="_TeamsTitle_"></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="container">
+		<div class="row" data-ng-controller="WorldCupController">
+			<h2>{{ worldcupteam.title }} {{ worldcupteam.ranking }}</h2>
+			<p><strong>Abbreviation: </strong>{{ worldcupteam.code }}</p>
+			<p><strong>Group: </strong>{{ worldcupteam.group }}</p>
+			<p><a href="#/teams">All WorldCup teams</a></p>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="footer-copyright" data-i18n="_CopyrightText_"></div>
+			</div>
+			<div class="col-md-4" ng-controller="LanguageCtrl">
+				<a href="#" ng-click="setEnglishLanguage()">English</a> | <a href="#" ng-click="setSpanishLanguage()">Spanish</a> | <a href="#" ng-click="setRussianLanguage()">Russian</a>
+			</div>
+		</div>
+	</div>
+</div>

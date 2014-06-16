@@ -1,9 +1,9 @@
-<div class="row" data-ng-controller="SignupCtrl">
+<!-- <div class="row" data-ng-controller="SignupCtrl">
   <div class="span6">
     <form class="ng-pristine ng-valid">
       <div class="control-group">
         <label for="name">Full name</label>
-        <input id="name" type="text" name="name" placeholder="Full name" ng-model="name">
+        <input id="name" type="text" name="name" placeholder="Enter your name" ng-model="name">
       </div>
       <div class="control-group">
         <label for="email">Email</label>
@@ -19,5 +19,71 @@
       </div>
     </form>
     <p ng-show="err" class="error">{{err}}</p>
+  </div>
+</div> -->
+
+
+<div class="section section-breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 data-i18n="_SignupTitle_"></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="basic-login">
+          <form role="form">
+          <p ng-show="err" class="error">{{err}}</p>
+            <div class="form-group">
+              <label for="name"><i class="icon-user"></i> <b>Your Name</b></label>
+              <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name" ng-model="name">
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="icon-envelope"></i> <b>Email</b></label>
+              <input class="form-control" id="email" type="text" placeholder="Enter your email address" ng-model="email">
+            </div>
+            <div class="form-group">
+              <label for="register-password"><i class="icon-lock"></i> <b>Password</b></label>
+              <input class="form-control" id="register-password" type="password" placeholder="Enter your password" ng-model="pass">
+            </div>
+<!--             <div class="form-group">
+              <label for="register-password2"><i class="icon-lock"></i> <b>Re-enter Password</b></label>
+              <input class="form-control" id="register-password2" type="password" placeholder="Re-enter your password" ng-model="pass">
+            </div> -->
+            <div class="form-group">
+              <a href="#/signin" class="show-login" data-i18n="_SigninTitle_"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="submit" class="btn pull-right" data-i18n="_SignupTitle_" ng-click="createAccount()"></button>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-offset-1 social-login">
+        <p>You can use your Facebook or Twitter for registration</p>
+        <div class="social-login-buttons">
+          <a href="#" class="btn-facebook-login">Use Facebook</a>
+          <a href="#" class="btn-twitter-login">Use Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="footer-copyright" data-i18n="_CopyrightText_"></div>
+      </div>
+      <div class="col-md-4" ng-controller="LanguageCtrl">
+        <a href="#" ng-click="setEnglishLanguage()">English</a> | <a href="#" ng-click="setSpanishLanguage()">Spanish</a> | <a href="#" ng-click="setRussianLanguage()">Russian</a>
+      </div>
+    </div>
   </div>
 </div>

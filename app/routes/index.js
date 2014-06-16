@@ -18,3 +18,7 @@ exports.signup = function(req, res){
 exports.sitemap = function(req, res){
   res.render('../app/views/sitemap.html');
 };
+
+exports.contact = function(req, res){
+  res.render('../app/views/contact.html');
+};

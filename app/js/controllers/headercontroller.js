@@ -24,6 +24,10 @@ angular.module('mondial2014.controllers.header', ['mondial2014.services.login'])
         {
           "title": "Games",
           "link": "/games"
+        },
+        {
+          "title": "Contact Us",
+          "link": "/contact"
         }
       ];
       

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="mondial2014">
+<html ng-app="mondial2014">
 <head>
     <title data-i18n="_HomeTitle_"></title>
     <meta name="description" content="">
@@ -21,10 +21,13 @@
     <header data-ng-include="'views/header.html'" class="mainmenu-wrapper"></header>
 
     <section class="content">
-      <section class="container">
-        <div ng-view></div>
+        <section class="container">
+            <div ng-view></div>
+        </section>
     </section>
-</section>
+    
+    <div footer></div>
+    <footer data-ng-include="'views/footer.html'" class="mainmenu-wrapper"></footer>
 
 <script src="http://static.firebase.com/v0/firebase.js"></script>
 <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
@@ -40,6 +43,9 @@
 <script src="js/app.js"></script>
 <script src="js/config.js"></script>
 <script src="js/controllers/headercontroller.js"></script>
+<script src="js/controllers/footercontroller.js"></script>
+<script src="js/directives.js"></script>
+<script src="js/filters.js"></script>
 <script src="js/controllers/signincontroller.js"></script>
 <script src="js/controllers/signupcontroller.js"></script>
 <script src="js/controllers/worldcupcontroller.js"></script>

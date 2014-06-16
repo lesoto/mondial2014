@@ -11,6 +11,7 @@ app.config(['$routeProvider',
       .when('/teams',  { templateUrl: 'views/worldcup/list.html', authRequired: false })
       .when('/teams/:TeamId', { templateUrl: 'views/worldcup/view.html', authRequired: false })
       .when('/sitemap',  { templateUrl: 'views/sitemap.html' })
+      .when('/contact',  { templateUrl: 'views/contact.html' })
       .otherwise(       { redirectTo: '/' });
     }])
   

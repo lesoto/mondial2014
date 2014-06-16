@@ -22,5 +22,25 @@
     {
         "key":"_SitemapTitle_",
         "value":"SPANISH Sitemap"
+    },
+    {
+        "key":"_ContactTitle_",
+        "value":"SPANISH Contact"
+    },
+    {
+        "key":"_CopyrightText_",
+        "value":"2014 © SP - All rights reserved"
+    },
+    {
+        "key":"_SigninTitle_",
+        "value":"SP Sign in"
+    },
+    {
+        "key":"_SignupTitle_",
+        "value":"SP Sign up"
+    },
+    {
+        "key":"_TeamsTitle_",
+        "value":"All Teams"
     }
 ]
