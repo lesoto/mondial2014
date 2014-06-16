@@ -9,7 +9,8 @@
   "dependencies": {
     "express": "latest",
     "logfmt": "latest",
-    "body-parser": "latest",
+    "body-parser": "latest",    
+    "gzippo": "^0.2.0",
     "path": "latest",
     "routes": "latest"
   },
@@ -43,7 +44,6 @@
     "grunt-screenshot-element": "^0.1.9",
     "grunt-svgmin": "^0.2.1",
     "grunt-usemin": "^2.0.2",
-    "gzippo": "^0.2.0",
     "i18n": "^0.4.1",
     "i18n-node-angular": "^0.2.0",
     "i18next": "^1.7.4",
