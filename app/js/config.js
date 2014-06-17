@@ -39,3 +39,13 @@ app.config(['$routeProvider',
         localize.setLanguage('ru-RU');
     };
   }
+
+
+require.config({
+  baseUrl: '../lib',
+  paths: {
+    'app': '../app',
+    'domReady': '../lib/requirejs-domready/domReady',
+    'angular': '../lib/angular/angular'
+  }
+});
