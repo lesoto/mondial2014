@@ -9,10 +9,12 @@ app.config(['$routeProvider',
       .when('/signin',  { templateUrl: 'views/users/signin.html' })
       .when('/signup',  { templateUrl: 'views/users/signup.html' })
       .when('/teams',  { templateUrl: 'views/worldcup/list.html', authRequired: false })
-      .when('/teams/:TeamId', { templateUrl: 'views/worldcup/view.html', authRequired: false })
+      .when('/teams/:TeamId', { templateUrl: 'views/worldcup/view.html', authRequired: true })
       .when('/sitemap',  { templateUrl: 'views/sitemap.html' })
       .when('/contact',  { templateUrl: 'views/contact.html' })
-      .otherwise(       { redirectTo: '/' });
+      .when('/404',  { templateUrl: 'views/page404.html' })
+      .when('/groups',  { templateUrl: 'views/worldcup/groups.html' })
+      .otherwise(       { redirectTo: '/404' });
     }])
   
   .run(['angularFireAuth', 'FBURL', '$rootScope', 
@@ -37,6 +39,3 @@ app.config(['$routeProvider',
         localize.setLanguage('ru-RU');
     };
   }
-
-
-
