@@ -55,3 +55,4 @@ angular.module('mondial2014.services.worldcup', [])
   return WorldCup;
   
   });
+
