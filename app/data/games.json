@@ -1,0 +1,339 @@
+{
+  "games": [
+    {
+      "gameId": 1,
+      "group": "A",
+      "gameTime": "Thu Jun/12 17:00",
+      "gameTitle": "Brazil - Croatia",
+      "gamePlace": "São Paulo"
+    },
+    {
+      "gameId": 47,
+      "group": "A",
+      "gameTime": "Fri Jun/13 13:00",
+      "gameTitle": "Mexico - Cameroon",
+      "gamePlace": "Natal"
+    },
+    {
+      "gameId": 17,
+      "group": "A",
+      "gameTime": "Tue Jun/17 16:00",
+      "gameTitle": "Brazil - Mexico",
+      "gamePlace": "Fortaleza"
+    },
+    {
+      "gameId": 47,
+      "group": "A",
+      "gameTime": "Wed Jun/18 18:00",
+      "gameTitle": "Cameroon - Croatia",
+      "gamePlace": "Manaus"
+    },
+    {
+      "gameId": 33,
+      "group": "A",
+      "gameTime": "Mon Jun/23 17:00",
+      "gameTitle": "Cameroon - Brazil",
+      "gamePlace": "Brasília"
+    },
+    {
+      "gameId": 47,
+      "group": "A",
+      "gameTime": "Mon Jun/23 17:00",
+      "gameTitle": "Croatia  - Mexico",
+      "gamePlace": "Recife"
+    },
+    {
+      "gameId": 3,
+      "group": "B",
+      "gameTime": "Fri Jun/13 16:00",
+      "gameTitle": "Spain - Netherlands",
+      "gamePlace": "Salvador"
+    },
+    {
+      "gameId": 47,
+      "group": "B",
+      "gameTime": "Fri Jun/13 18:00",
+      "gameTitle": "Chile - Australia",
+      "gamePlace": "Cuiabá"
+    },
+    {
+      "gameId": 19,
+      "group": "B",
+      "gameTime": "Spain - Chile",
+      "gamePlace": "Rio de Janeiro"
+    },
+    {
+      "gameId": 47,
+      "group": "B",
+      "gameTime": "Wed Jun/18 13:00",
+      "gameTitle": "Australia - Netherlands",
+      "gamePlace": "Porto Alegre"
+    },
+    {
+      "gameId": 35,
+      "group": "B",
+      "gameTime": "Mon Jun/23 13:00",
+      "gameTitle": "Australia - Spain",
+      "gamePlace": "Curitiba"
+    },
+    {
+      "gameId": 47,
+      "group": "B",
+      "gameTime": "Mon Jun/23 13:00",
+      "gameTitle": "Netherlands - Chile",
+      "gamePlace": "São Paulo"
+    },
+    {
+      "gameId": 5,
+      "group": "C",
+      "gameTime": "Sat Jun/14 13:00",
+      "gameTitle": "Colombia - Greece",
+      "gamePlace": "Belo Horizonte"
+    },
+    {
+      "gameId": 47,
+      "group": "C",
+      "gameTime": "Sat Jun/14 22:00",
+      "gameTitle": "Côte d'Ivoire - Japan",
+      "gamePlace": "Recife"
+    },
+    {
+      "gameId": 21,
+      "group": "C",
+      "gameTime": "Thu Jun/19 13:00",
+      "gameTitle": "Colombia - Côte d'Ivoire",
+      "gamePlace": "Brasília"
+    },
+    {
+      "gameId": 47,
+      "group": "C",
+      "gameTime": "Thu Jun/19 19:00",
+      "gameTitle": "Japan - Greece",
+      "gamePlace": "Natal"
+    },
+    {
+      "gameId": 37,
+      "group": "C",
+      "gameTime": "Tue Jun/24 16:00",
+      "gameTitle": "Japan - Colombia",
+      "gamePlace": "Cuiabá"
+    },
+    {
+      "gameId": 47,
+      "group": "C",
+      "gameTime": "Tue Jun/24 17:00",
+      "gameTitle": "Côte d'Ivoire - Greece",
+      "gamePlace": "Fortaleza"
+    },
+    {
+      "gameId": 7,
+      "group": "D",
+      "gameTime": "Sat Jun/14 16:00",
+      "gameTitle": "Uruguay - Costa Rica",
+      "gamePlace": "Fortaleza"
+    },
+    {
+      "gameId": 47,
+      "group": "D",
+      "gameTime": "Sat Jun/14 18:00",
+      "gameTitle": "England - Italy",
+      "gamePlace": "Manaus"
+    },
+    {
+      "gameId": 23,
+      "group": "D",
+      "gameTime": "Thu Jun/19 16:00",
+      "gameTitle": "Uruguay - England",
+      "gamePlace": "São Paulo"
+    },
+    {
+      "gameId": 47,
+      "group": "D",
+      "gameTime": "Fri Jun/20 13:00",
+      "gameTitle": "Italy - Costa Rica",
+      "gamePlace": "Recife"
+    },
+    {
+      "gameId": 39,
+      "group": "D",
+      "gameTime": "Tue Jun/24 13:00",
+      "gameTitle": "Italy - Uruguay",
+      "gamePlace": "Natal"
+    },
+    {
+      "gameId": 47,
+      "group": "D",
+      "gameTime": "Tue Jun/24 13:00",
+      "gameTitle": "Costa Rica - England",
+      "gamePlace": "Belo Horizonte"
+    },
+    {
+      "gameId": 9,
+      "group": "E",
+      "gameTime": "Sun Jun/15 13:00",
+      "gameTitle": "Switzerland - Ecuador",
+      "gamePlace": "Brasília"
+    },
+    {
+      "gameId": 47,
+      "group": "E",
+      "gameTime": "Sun Jun/15 16:00",
+      "gameTitle": "France - Honduras",
+      "gamePlace": "Porto Alegre"
+    },
+    {
+      "gameId": 25,
+      "group": "E",
+      "gameTime": "Fri Jun/20 16:00",
+      "gameTitle": "Switzerland - France",
+      "gamePlace": "Salvador"
+    },
+    {
+      "gameId": 47,
+      "group": "E",
+      "gameTime": "Fri Jun/20 19:00",
+      "gameTitle": "Honduras - Ecuador",
+      "gamePlace": "Curitiba"
+    },
+    {
+      "gameId": 41,
+      "group": "E",
+      "gameTime": "Wed Jun/25 16:00",
+      "gameTitle": "Honduras - Switzerland",
+      "gamePlace": "Manaus"
+    },
+    {
+      "gameId": 47,
+      "group": "E",
+      "gameTime": "Wed Jun/25 17:00",
+      "gameTitle": "Ecuador  - France",
+      "gamePlace": "Rio de Janeiro"
+    },
+    {
+      "gameId": 11,
+      "group": "F",
+      "gameTime": "Sun Jun/15 19:00",
+      "gameTitle": "Argentina - Bosnia-Herzegovina",
+      "gamePlace": "Rio de Janeiro"
+    },
+    {
+      "gameId": 47,
+      "group": "F",
+      "gameTime": "Mon Jun/16 16:00",
+      "gameTitle": "Iran - Nigeria",
+      "gamePlace": "Curitiba"
+    },
+    {
+      "gameId": 27,
+      "group": "F",
+      "gameTime": "Sat Jun/21 13:00",
+      "gameTitle": "Argentina - Iran",
+      "gamePlace": "Belo Horizonte"
+    },
+    {
+      "gameId": 47,
+      "group": "F",
+      "gameTime": "Sat Jun/21 18:00",
+      "gameTitle": "Nigeria - Bosnia-Herzegovina",
+      "gamePlace": "Cuiabá"
+    },
+    {
+      "gameId": 43,
+      "group": "F",
+      "gameTime": "Wed Jun/25 13:00",
+      "gameTitle": "Nigeria - Argentina",
+      "gamePlace": "Porto Alegre"
+    },
+    {
+      "gameId": 47,
+      "group": "F",
+      "gameTime": "Wed Jun/25 13:00",
+      "gameTitle": "Bosnia-Herzegovina - Iran",
+      "gamePlace": "Salvador"
+    },
+    {
+      "gameId": 13,
+      "group": "G",
+      "gameTime": "Mon Jun/16 13:00",
+      "gameTitle": "Germany - Portugal",
+      "gamePlace": "Salvador"
+    },
+    {
+      "gameId": 47,
+      "group": "G",
+      "gameTime": "Mon Jun/16 19:00",
+      "gameTitle": "Ghana - United States",
+      "gamePlace": "Natal"
+    },
+    {
+      "gameId": 29,
+      "group": "G",
+      "gameTime": "Sat Jun/21 16:00",
+      "gameTitle": "Germany - Ghana",
+      "gamePlace": "Fortaleza"
+    },
+    {
+      "gameId": 47,
+      "group": "G",
+      "gameTime": "Sun Jun/22 18:00",
+      "gameTitle": "United States - Portugal",
+      "gamePlace": "Manaus"
+    },
+    {
+      "gameId": 45,
+      "group": "G",
+      "gameTime": "Thu Jun/26 13:00",
+      "gameTitle": "United States - Germany",
+      "gamePlace": "Recife"
+    },
+    {
+      "gameId": 47,
+      "group": "G",
+      "gameTime": "Thu Jun/26 13:00",
+      "gameTitle": "Portugal - Ghana",
+      "gamePlace": "Brasília"
+    },
+    {
+      "gameId": 15,
+      "group": "H",
+      "gameTime": "Tue Jun/17 13:00",
+      "gameTitle": "Belgium - Algeria",
+      "gamePlace": "Belo Horizonte"
+    },
+    {
+      "gameId": 47,
+      "group": "H",
+      "gameTime": "Tue Jun/17 18:00",
+      "gameTitle": "Russia - South Korea",
+      "gamePlace": "Cuiabá"
+    },
+    {
+      "gameId": 31,
+      "group": "H",
+      "gameTime": "Sun Jun/22 13:00",
+      "gameTitle": "Belgium - Russia",
+      "gamePlace": "Rio de Janeiro"
+    },
+    {
+      "gameId": 47,
+      "group": "H",
+      "gameTime": "Sun Jun/22 16:00",
+      "gameTitle": "South Korea - Algeria",
+      "gamePlace": "Porto Alegre"
+    },
+    {
+      "gameId": 47,
+      "group": "H",
+      "gameTime": "Thu Jun/26 17:00",
+      "gameTitle": "South Korea - Belgium",
+      "gamePlace": "São Paulo"
+    },
+    {
+      "gameId": 47,
+      "group": "H",
+      "gameTime": "Thu Jun/26 17:00",
+      "gameTitle": "Algeria - Russia",
+      "gamePlace": "Curitiba"
+    }
+  ]
+}

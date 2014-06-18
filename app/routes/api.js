@@ -190,36 +190,3 @@ exports.team = function (req, res) {
     res.json(false);
   }
 };
-
-// POST
-
-exports.addTeam = function (req, res) {
-  data.teams.push(req.body);
-  res.json(req.body);
-};
-
-// PUT
-
-exports.editTeam = function (req, res) {
-  var id = req.params.id;
-
-  if (id >= 0 && id < data.teams.length) {
-    data.teams[id] = req.body;
-    res.json(true);
-  } else {
-    res.json(false);
-  }
-};
-
-// DELETE
-
-exports.deleteTeam = function (req, res) {
-  var id = req.params.id;
-
-  if (id >= 0 && id < data.teams.length) {
-    data.teams.splice(id, 1);
-    res.json(true);
-  } else {
-    res.json(false);
-  }
-};

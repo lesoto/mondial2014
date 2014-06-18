@@ -1,6 +1,7 @@
 var express = require('express'),
   routes = require('./app/routes'),
-  api = require('./app/routes/api');
+  api = require('./app/routes/api'),
+  game = require('./app/routes/game');
 var logfmt = require("logfmt");
 var bodyParser = require('body-parser');
 
@@ -26,6 +27,11 @@ app.get('/404', routes.page404);
 app.get('/groups', routes.groups);
 app.get('/teams', api.teams);
 app.get('/teams/:TeamId', api.team);
+
+app.get('/games', game.findAll);
+app.get('/games/:id', game.findById);
+app.post('/games', game.addGame);
+app.put('/games/:id', game.updateGame);
 
 //app.get('*', routes.index);
 

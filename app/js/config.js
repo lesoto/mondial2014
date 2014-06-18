@@ -14,6 +14,8 @@ app.config(['$routeProvider',
       .when('/contact',  { templateUrl: 'views/contact.html' })
       .when('/404',  { templateUrl: 'views/page404.html' })
       .when('/groups',  { templateUrl: 'views/worldcup/groups.html' })
+      .when('/games',  { templateUrl: 'views/worldcup/games.html' })
+      .when('/games/:gameId', { templateUrl: 'views/worldcup/game.html' })
       .otherwise(       { redirectTo: '/404' });
     }])
   

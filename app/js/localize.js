@@ -55,7 +55,7 @@ function($http, $rootScope, $window, $filter) {
 				// set language
 				localize.language = lang;
 			}
-			return 'i18n/resources-locale_' + localize.language + '.js';
+			return 'i18n/resources-locale_' + localize.language + '.json';
 		},
 
 		// loads the language resource file from the server
