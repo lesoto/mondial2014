@@ -23,13 +23,16 @@
     <section class="content">
         <section class="container">
             <div ng-view></div>
+            <languagebar></languagebar>
             <footer></footer>
         </section>
     </section>
     
     <script src="lib/requirejs/require.js" data-main="js/app.js"></script>
     <script src="lib/requirejs-domready/domReady.js"></script>
-    <script src="lib/json3/lib/json3.js"></script>
+    <!--<script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>-->
+    <!--<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.js"></script-->
+    <!--<script src="https://cdn.firebase.com/js/simple-login/1.5.0/firebase-simple-login.js"></script>-->
     <script src="http://static.firebase.com/v0/firebase.js"></script>
     <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
     <script src="lib/angular/angular.js"></script>
@@ -49,6 +52,7 @@
     <script src="js/controllers/signincontroller.js"></script>
     <script src="js/controllers/signupcontroller.js"></script>
     <script src="js/controllers/worldcupcontroller.js"></script>
+    <script src="js/controllers/gamescontroller.js"></script>
     <script src="js/services/loginservice.js"></script>
     <script src="js/services/profilecreator.js"></script>
     <script src="js/services/worldcupservice.js"></script>

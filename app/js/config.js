@@ -43,11 +43,14 @@ app.config(['$routeProvider',
   }
 
 
-require.config({
-  baseUrl: '../lib',
+require.config(
+{
+  //baseUrl: 'app/js',
   paths: {
-    'app': '../app',
-    'domReady': '../lib/requirejs-domready/domReady',
-    'angular': '../lib/angular/angular'
+    'angular': './app/lib/angular/angular.min',
+    'jquery': './app/lib/jquery.min',
+    'domReady': './app/lib/requirejs-domready/domReady'
   }
-});
+})
+
+;
