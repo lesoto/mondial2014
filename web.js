@@ -1,14 +1,15 @@
 var express = require('express'),
-  routes = require('./app/routes'),
-  api = require('./app/routes/api'),
-  game = require('./app/routes/game');
+	routes = require('./app/routes'),
+	api = require('./app/routes/api'),
+	game = require('./app/routes/game');
 var logfmt = require("logfmt");
 var bodyParser = require('body-parser');
 
 var app = express();
 
 app.use(logfmt.requestLogger());
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
  
 var port = Number(process.env.PORT || 5000);
 
